@@ -1,0 +1,34 @@
+# Secrets and local settings
+.env
+.env.*
+!.env.example
+**/secrets.h
+*credentials*.json
+*service_account*.json
+
+# Personal biometric enrollment data
+backend/faces/*
+!backend/faces/.gitkeep
+*.npy
+
+# Model binaries: download separately per README
+*.onnx
+
+# Python generated files
+__pycache__/
+*.py[cod]
+.venv/
+venv/
+.pytest_cache/
+
+# OS/editor
+.DS_Store
+Thumbs.db
+.vscode/
+.idea/
+
+# Logs and local databases
+*.log
+*.db
+*.sqlite
+*.sqlite3
